@@ -1,0 +1,124 @@
+body
+{
+	background-color: #f2f1f1;
+}
+
+div#header
+{
+	margin: auto;
+	width: 994px;
+	height: 85px;
+	background-color: white;
+}
+
+div#main
+{
+	background-color: white;
+	margin: auto;
+	width: 994px;
+	min-height: 100vh;
+}
+
+div#main2
+{
+	background-color: white;
+	margin: auto;
+	width: 994px;
+}
+
+div#produits
+{
+	float:left;
+	position: relative;
+	left:7px;
+	background-color: #f2f1f1;
+	height:240px;
+	width: 195px;
+}
+
+div#titrep
+{
+
+	background-color: white;
+	height:50px;
+	width: 190px;
+}
+
+div#vitrine
+{
+	float:center;
+}
+
+
+img#logo
+{
+	float:left;
+	margin-left: 10px;
+}
+
+img#cart
+{
+	float:right;
+	padding-right: 50px;
+	padding-top: 20px
+}
+
+img#food
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+img#member
+{
+	float:right;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+h1#sales
+{
+
+	padding-left: 35px;
+	background-color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EEEEEE;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    width: 216px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+	color:white;
+    background-color: #111;
+}
+
+p#bienvenue
+{
+	text-align: center;
+}
+
+p#addcart
+{
+	position: relative;
+	bottom:20px;
+	margin: 0;
+	padding: 0;
+}
