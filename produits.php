@@ -1,7 +1,11 @@
 <?php
 
 session_start();
-
+echo $_POST['compteur'];
+echo $_POST['cafe'];
+echo $_POST['brioches'];
+echo $_POST['beurre'];
+echo $_POST['recettesPD'];
 
 
 
@@ -12,7 +16,7 @@ session_start();
 <head>
 	<title>Produits</title>
 	<link rel="stylesheet" type="text/css" href="all.css">
-	
+
 
 </head>
 <body>
