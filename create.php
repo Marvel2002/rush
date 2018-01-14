@@ -1,12 +1,39 @@
 <?php
 
 	session_start();
-	if ($_POST['submit'] === 'OK' && isset($_POST['login']) && isset($_POST['passwd']))
+	/*if ($_POST['submit'] === 'OK' && isset($_POST['login']) && isset($_POST['passwd']))
 	{		
 		$_SESSION['login'] = $_POST['login'];
 		$_SESSION['passwd'] = $_POST['passwd'];
 		header("Location: index.php");
+	}*/
+	if ($_POST['login'] && $_POST['passwd'] && $_POST['submit'] && $_POST['submit'] === "OK")
+	{
+
+	$con = mysqli_connect("localhost","root","08926889","rush");
+	if ($con)
+		echo "CONNECTION SUCCESS"."\n";
+	$name = $_POST['login'];
+	$mdp = $_POST['passwd'];
+	if ($res = mysqli_query($con, "SELECT login from users WHERE login = '$name'"))
+	{
+		$value = mysqli_fetch_array($res);
+		echo "New record created successfully\n";
+		if (isset($value))
+			echo "PSEUDO EXISTE DEJA, IMPOSSIBLE DE CREER\n";
+		else
+			{
+					if (mysqli_query($con, "INSERT INTO users (login, passwd) VALUES ('$name', '$mdp')"))
+						echo "PSEUDO NON EXISTANT, IL VIENT DETRE CREE\n"; 
+					$_SESSION['login'] = $_POST['login'];
+					$_SESSION['passwd'] = $_POST['passwd'];
+					header("Location: index.php");
+			}
 	}
+	else
+		echo "Error: " . "SELECT '$name' from 'users'" . "<br>" . mysqli_error($con);
+}
+
 ?>
 
 <!DOCTYPE html>

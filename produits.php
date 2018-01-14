@@ -3,6 +3,8 @@
 session_start();
 
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +12,7 @@ session_start();
 <head>
 	<title>Produits</title>
 	<link rel="stylesheet" type="text/css" href="all.css">
+	
 
 </head>
 <body>
@@ -22,27 +25,23 @@ if (isset($_SESSION['login']) && isset($_SESSION['passwd']))
 	echo "Choisis donc tes produits ".$_SESSION['login']." !";
 ?><br>
 
-Nutella + -  <br/>
-Confiture + - <br/>
-Cacahuete + - <br/>
-Beurre + -  <br/>
-Recettes + - <br/>
-Moutarde + - <br/>
-Haricots + - <br/>
-Oignons + - <br/>
-Brioches + - <br/>
-Café + - <br/>
+	<form action="produits.php" method="post">
+		<p>Catégories</p>
+	<input type="checkbox" name="breakfast" value=""/>Petit-Dejeuner<br / >
+	<input type="checkbox" name="meal" value =""/>Repas<br / >
+	<input type="checkbox" name="recipe" value =""/>Recette Gourmande<br / >
+	<input type="submit" name="submit" value="OK" />
+</form>	
+
+<?php
+if (isset($_POST['breakfast']))
+	Include("breakfast.php");
+if (isset($_POST['meal']))
+	Include("meal.php");
+if (isset($_POST['recipe']))
+	Include("recipe.php");
+
+?>
 
 
-
-<a href="logout.php"><?php 
-if (isset($_SESSION['login']) && isset($_SESSION['passwd']))
-	echo "Se déconnecter";
-
-?></a>
-<a href="delete.php"><?php 
-if (isset($_SESSION['login']) && isset($_SESSION['passwd']))
-	echo "Se désinscrire";
-
-?></a>
 </div>

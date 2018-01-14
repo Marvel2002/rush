@@ -7,7 +7,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Panier</title>
+	<title>Authentification</title>
 	<link rel="stylesheet" type="text/css" href="all.css">
 
 </head>
