@@ -11,6 +11,6 @@
 
 <div id="main">
 
-	CONTACT
+Cela n'est pas nécessaire, aucun remboursement ne sera fait.<br>
 
 </div>

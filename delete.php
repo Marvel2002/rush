@@ -12,6 +12,8 @@ if ($_POST['submit'] === 'OK' && isset($_POST['oui']))
 	$mdp = $_SESSION['passwd'];
 	if (mysqli_query($con, "DELETE FROM `users` WHERE `users`.`login` = '$name'"))
 	{
+		mysqli_query($con, "DELETE from panier where id_user ='$name'");
+		unset($_SESSION['cart']);
 		echo "New record created successfully";
 		session_destroy();
 		header("Location: delete_confirm_2.php");

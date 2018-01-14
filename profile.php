@@ -17,10 +17,14 @@ session_start();
 
 <div id="main">
 <p id="bienvenue">Bonjour <?php echo $_SESSION['login'] ?> !</p>
-<p>Ton panier est :</p>
 
 
 
+<a href="cart.php"><?php 
+if (isset($_SESSION['login']) && isset($_SESSION['passwd']))
+	echo "Voir mon panier";
+
+?></a>
 <a href="logout.php"><?php 
 if (isset($_SESSION['login']) && isset($_SESSION['passwd']))
 	echo "Se déconnecter";

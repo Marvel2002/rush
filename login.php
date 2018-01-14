@@ -4,7 +4,6 @@ session_start();
 
 if ($_GET['login'] && $_GET['passwd'] && $_GET['submit'] && $_GET['submit'] === "OK")
 {
-
 	$con = mysqli_connect("localhost","root","08926889","rush");
 	if ($con)
 		echo "CONNECTION SUCCESS"."\n";
@@ -14,11 +13,21 @@ if ($_GET['login'] && $_GET['passwd'] && $_GET['submit'] && $_GET['submit'] === 
 	{
 		$value = mysqli_fetch_array($res);
 		echo "New record created successfully";
-		if (isset($value))
+		if (isset($value) && $value[0] == $name)
 		{
-			$_SESSION['login'] = $_GET['login'];
-			$_SESSION['passwd'] = $_GET['passwd'];
-			echo "PSEUDO EXISTE";
+			echo "pseudo valide";
+			if ($res = mysqli_query($con, "SELECT passwd from users WHERE login = '$name'"))
+			{
+				$value = mysqli_fetch_array($res);
+				if (isset($value) && $value[0] == $mdp)
+				{
+						$_SESSION['login'] = $_GET['login'];
+						$_SESSION['passwd'] = $_GET['passwd'];
+						echo "PSEUDO EXISTE";
+				}
+				else
+					echo "PSEUDO EXISTE PASSSSS, merci de t'inscrire";
+			}
 		}
 		else
 			echo "PSEUDO EXISTE PAS, merci de t'inscrire";
@@ -29,9 +38,17 @@ if ($_GET['login'] && $_GET['passwd'] && $_GET['submit'] && $_GET['submit'] === 
 
 if (isset($_SESSION['login']) && isset($_SESSION['passwd']))
 {
+	if (isset($_SESSION['cart']))
+	{
+		$name = $_SESSION['login'];
+		$generic = "NONAME";
+		mysqli_query($con, "UPDATE `panier` SET `id_user`='$name' WHERE 'id_user' = '$generic'");
+	}
+
 	header("Location: profile.php");
 	exit();
 }
+
 
 ?>
 

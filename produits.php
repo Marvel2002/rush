@@ -1,13 +1,20 @@
 <?php
 
 session_start();
-echo $_POST['confiture'];
-echo $_POST['cafe'];
-echo $_POST['brioches'];
-echo $_POST['beurre'];
-echo $_POST['recettesPD'];
 
-
+if (isset($_SESSION['login']))
+	$name = $_SESSION['login'];
+else
+	$name = "NONAME";
+foreach ($_POST as $key => $value) 
+{
+	$con = mysqli_connect("localhost","root","08926889","rush");
+	if ($con)
+		echo "CONNECTION SUCCESS"."\n";
+	if (mysqli_query($con, "INSERT INTO panier (id_article, qte, id_user) VALUES ('$key', '$value', '$name')"))
+		echo "ENTREE CREEE\n";
+	$_SESSION['cart'] = 1;
+}
 ?>
 
 <!DOCTYPE html>

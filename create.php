@@ -1,12 +1,8 @@
 <?php
 
 	session_start();
-	/*if ($_POST['submit'] === 'OK' && isset($_POST['login']) && isset($_POST['passwd']))
-	{		
-		$_SESSION['login'] = $_POST['login'];
-		$_SESSION['passwd'] = $_POST['passwd'];
-		header("Location: index.php");
-	}*/
+	$val = $_SESSION['cart'];
+	echo "CART = $val (create)";
 	if ($_POST['login'] && $_POST['passwd'] && $_POST['submit'] && $_POST['submit'] === "OK")
 	{
 
@@ -27,6 +23,12 @@
 						echo "PSEUDO NON EXISTANT, IL VIENT DETRE CREE\n"; 
 					$_SESSION['login'] = $_POST['login'];
 					$_SESSION['passwd'] = $_POST['passwd'];
+					$name = $_SESSION['login'];
+					if ($_SESSION['cart'])
+					{
+						$name = $_SESSION['login'];
+						mysqli_query($con, "UPDATE `panier` SET `id_user`='$name' WHERE `id_user`='NONAME'");
+					}
 					header("Location: index.php");
 			}
 	}
