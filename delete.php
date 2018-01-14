@@ -5,7 +5,7 @@ if ($_POST['submit'] === 'OK' && isset($_POST['non']))
 	header("Location: delete_confirm_2.php");
 if ($_POST['submit'] === 'OK' && isset($_POST['oui']))
 {
-	$con = mysqli_connect("localhost","root","08926889","rush");
+	$con = mysqli_connect("localhost","root","0892","miniboutique");
 	if ($con)
 		echo "CONNECTION SUCCESS"."\n";
 	$name = $_SESSION['login'];

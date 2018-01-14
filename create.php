@@ -6,7 +6,7 @@
 	if ($_POST['login'] && $_POST['passwd'] && $_POST['submit'] && $_POST['submit'] === "OK")
 	{
 
-	$con = mysqli_connect("localhost","root","08926889","rush");
+	$con = mysqli_connect("localhost","root","0892","miniboutique");
 	if ($con)
 		echo "CONNECTION SUCCESS"."\n";
 	$name = $_POST['login'];

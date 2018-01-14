@@ -8,7 +8,7 @@ else
 	$name = "NONAME";
 foreach ($_POST as $key => $value) 
 {
-	$con = mysqli_connect("localhost","root","08926889","rush");
+	$con = mysqli_connect("localhost","root","0892","miniboutique");
 	if ($con)
 		echo "CONNECTION SUCCESS"."\n";
 	if (mysqli_query($con, "INSERT INTO panier (id_article, qte, id_user) VALUES ('$key', '$value', '$name')"))

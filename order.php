@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = mysqli_connect("localhost","root","08926889","rush");
+$con = mysqli_connect("localhost","root","0892","miniboutique");
 	if ($con)
 	{
 		$name = $_SESSION['login'];

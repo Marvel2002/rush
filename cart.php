@@ -14,7 +14,7 @@ if (isset($_GET['submit']) && $_GET['submit'] == "Payer/Commander")
 
 if (isset($_GET['submit']) && $_GET['submit'] == "Vider mon panier")
 {
-	$con = mysqli_connect("localhost","root","08926889","rush");
+	$con = mysqli_connect("localhost","root","0892","miniboutique");
 	if ($con)
 	{
 		if (isset($_SESSION['login']))
@@ -49,7 +49,7 @@ if (isset($_SESSION['login']))
 	$name = $_SESSION['login'];
 else
 	$name = "NONAME";
-$con = mysqli_connect("localhost","root","08926889","rush");
+$con = mysqli_connect("localhost","root","0892","miniboutique");
 if ($con)
 {
 if ($res = mysqli_query($con, "SELECT * FROM panier WHERE id_user = '$name'"))

@@ -4,7 +4,7 @@ session_start();
 
 if ($_GET['login'] && $_GET['passwd'] && $_GET['submit'] && $_GET['submit'] === "OK")
 {
-	$con = mysqli_connect("localhost","root","08926889","rush");
+	$con = mysqli_connect("localhost","root","0892","miniboutique");
 	if ($con)
 		echo "CONNECTION SUCCESS"."\n";
 	$name = $_GET['login'];
@@ -25,12 +25,8 @@ if ($_GET['login'] && $_GET['passwd'] && $_GET['submit'] && $_GET['submit'] === 
 						$_SESSION['passwd'] = $_GET['passwd'];
 						echo "PSEUDO EXISTE";
 				}
-				else
-					echo "PSEUDO EXISTE PASSSSS, merci de t'inscrire";
 			}
 		}
-		else
-			echo "PSEUDO EXISTE PAS, merci de t'inscrire";
 	}
 	else
 		echo "Error: " . "SELECT '$name' from 'users'" . "<br>" . mysqli_error($con);
