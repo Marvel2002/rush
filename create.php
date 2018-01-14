@@ -1,13 +1,12 @@
 <?php
 
-session_start();
-
-if (isset($_SESSION['login']) && isset($_SESSION['passwd']))
-{
-	header("Location: produits.php");
-	exit();
-}
-
+	session_start();
+	if ($_POST['submit'] === 'OK' && isset($_POST['login']) && isset($_POST['passwd']))
+	{		
+		$_SESSION['login'] = $_POST['login'];
+		$_SESSION['passwd'] = $_POST['passwd'];
+		header("Location: index.php");
+	}
 ?>
 
 <!DOCTYPE html>
@@ -23,15 +22,14 @@ if (isset($_SESSION['login']) && isset($_SESSION['passwd']))
 
 <div id="main">
 	<div>
-Se connecter
-	<form action="index.php" method="get">
+Créer un compte
+	<form action="create.php" method="post">
 	Identifiant: <input type="text" name="login" value="" /><br / >
 	Mot de passe: <input type="password" name="passwd" value="" /><br / >
 	<input type="submit" name="submit" value="OK" />
 </form>	
 	</div>
 
-<a href="create.php"><p>Nouveau ?</p></a>
 
 
 
