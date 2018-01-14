@@ -26,7 +26,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <div id="prix">
-3€
+5€
 </div>
 
 <br/>
@@ -50,7 +50,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <div id="prix">
-2€
+5€
 </div>
 
 <b> Brioches </b> <form action="produits.php" method="post">
@@ -98,7 +98,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <div id="prix">
-4€
+5€
 </div>
 
 <b> Beurre </b>  <form action="produits.php" method="post">
@@ -122,7 +122,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <div id="prix">
-1.25€
+5€
 </div>
 
 <b> Pack Recettes Petit-Dejeuner </b>  <form action="produits.php" method="post">
@@ -146,7 +146,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <div id="prix">
-15€
+5€
 </div>
 
 <b> Nutella </b>  <form action="produits.php" method="post">

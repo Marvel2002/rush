@@ -19,7 +19,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <div id="prix">
-1.5€
+5€
 </div>
 
 
@@ -44,7 +44,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <div id="prix">
-3€
+5€
 </div>
 
 <b>Oignons</b> <form action="produits.php" method="post">
@@ -68,7 +68,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <div id="prix">
-2€
+5€
 </div>
 
 <b>Pack Recettes Repas</b> <form action="produits.php" method="post">
@@ -91,6 +91,6 @@ Quantité désirée (5 maximum) :
 </div>
 
 <div id="prix">
-15€
+5€
 </div>
 
