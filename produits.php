@@ -8,7 +8,6 @@ echo $_POST['beurre'];
 echo $_POST['recettesPD'];
 
 
-
 ?>
 
 <!DOCTYPE html>
@@ -17,11 +16,12 @@ echo $_POST['recettesPD'];
 	<title>Produits</title>
 	<link rel="stylesheet" type="text/css" href="all.css">
 
-
 </head>
 <body>
 <?php Include("header.html"); ?>
 <?php Include("menu.html"); ?>
+
+</table>
 
 <div id="main">
 <?php 

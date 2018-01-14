@@ -124,3 +124,23 @@ p#addcart
 	margin: 0;
 	padding: 0;
 }
+
+div#quantiteright
+{
+	position: relative;
+	bottom: 10px;
+}
+
+div#texte
+{	
+	padding-left: 520px;
+	position: relative;
+	bottom: 110px;
+}
+
+div#prix
+{
+	padding-left: 360px;
+	position: relative;
+	bottom: 128px;
+}
