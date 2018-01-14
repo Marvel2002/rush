@@ -1,5 +1,5 @@
 <b>Moutarde </b> <form action="produits.php" method="post">
-<img src= "img/mustard.jpeg" width="192" height="170" >
+<img src= "https://279173f3.nuajik.io/50-large_default/frenchs-classic-yellow-mustard.jpg" alt="Moutarde" title="Moutarde"  width="192" height="170" >
 
 <div id="quantiteright">
 Quantité désirée (5 maximum) :
@@ -24,7 +24,7 @@ Quantité désirée (5 maximum) :
 
 
 <b>Haricots</b> <form action="produits.php" method="post">
-<img src= "img/beans.jpeg" width="192" height="170" >
+<img src= "https://target.scene7.com/is/image/Target/13742542?wid=520&hei=520&fmt=pjpeg" alt="Haricots" title="Haricots"  width="192" height="170" >
 
 <div id="quantiteright">
 Quantité désirée (5 maximum) :
@@ -48,7 +48,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <b>Oignons</b> <form action="produits.php" method="post">
-<img src= "img/frenchf.jpg" width="192" height="170" >
+<img src= "http://www.bestgrocerydelivery.net/assets/images/frenchsfriedonions.jpg" alt="Oignons" title="Oignons"  width="192" height="170" >
 
 <div id="quantiteright">
 Quantité désirée (5 maximum) :
@@ -72,7 +72,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <b>Pack Recettes Repas</b> <form action="produits.php" method="post">
-<img src= "img/recipedinner.jpeg" width="192" height="170" >
+<img src= "http://food.fnr.sndimg.com/content/dam/images/food/fullset/2009/12/13/1/FNM_011009-W-N-Dinners-027_s4x3.jpg.rend.hgtvcom.966.725.suffix/1382539273224.jpeg" alt="Recette_R" title="Recette_R" width="192" height="170" >
 
 <div id="quantiteright">
 Quantité désirée (5 maximum) :

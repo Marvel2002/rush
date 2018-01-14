@@ -1,6 +1,6 @@
 
 <b> Pack Recettes Petit-Dejeuner </b>  <form action="produits.php" method="post">
-<img src= "img/recipebreakfast.jpg" width="192" height="170" >
+<img src= "http://images.media-allrecipes.com/userphotos/250x250/34761.jpg" alt="Recette_Pd" title="Recette_Pd"  width="192" height="170" >
 
 <div id="quantiterright">
 Quantité désirée (5 maximum) :
@@ -24,7 +24,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <b> Pack Recettes Repas </b>  <form action="produits.php" method="post">
-<img src= "img/recipedinner.jpeg" width="192" height="170" >
+<img src= "http://food.fnr.sndimg.com/content/dam/images/food/fullset/2009/12/13/1/FNM_011009-W-N-Dinners-027_s4x3.jpg.rend.hgtvcom.966.725.suffix/1382539273224.jpeg" alt="Recette_R" title="Recette_R" width="192" height="170">
 
 <div id="quantiteright">
 Quantité désirée (5 maximum) :
@@ -48,7 +48,7 @@ Quantité désirée (5 maximum) :
 </div>
 
 <b> Pack de Recettes Complet </b> <form action="produits.php" method="post">
-<img src= "img/2.jpg" width="192" height="170" >
+<img src= "http://www.wilko.com/content/ebiz/wilkinsonplus/invt/0344534/0344534_l.jpg" alt="Recette2" title="Recette2" width="192" height="170" >
 
 <div id=quantiteright">
 Quantité désirée (5 maximum) :
